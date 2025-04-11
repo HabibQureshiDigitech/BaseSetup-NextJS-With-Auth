@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Layout, Menu, Dropdown } from 'antd';
-import { MenuOutlined, LogoutOutlined } from '@ant-design/icons';
+import { Layout, Menu } from 'antd';
+import { LogoutOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 
 const { Header } = Layout;
@@ -35,9 +35,9 @@ const UserNavbar = () => {
       </div>
 
       {/* Right Side Dropdown */}
-      <Dropdown overlay={menu} trigger={["click"]} onOpenChange={setOpen} open={open}>
+      {/* <Dropdown overlay={menu} trigger={["click"]} onOpenChange={setOpen} open={open}>
         <MenuOutlined style={{ fontSize: '24px', color: 'gray', cursor: 'pointer' }} />
-      </Dropdown>
+      </Dropdown> */}
     </Header>
   );
 };
